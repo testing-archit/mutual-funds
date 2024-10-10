@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund NAV Finder</title>
+</head>
+<body>
+    <h1>Mutual Fund NAV Finder</h1>
+    <form method="post">
+        <label for="fund_name">Enter Mutual Fund Name:</label>
+        <input type="text" id="fund_name" name="fund_name" required>
+        <button type="submit">Get NAV</button>
+    </form>
+    {% if nav_value %}
+        <h2>NAV: {{ nav_value }}</h2>
+    {% endif %}
+</body>
+</html>
